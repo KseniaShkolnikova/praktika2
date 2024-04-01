@@ -8,10 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid RenderTransformOrigin="0.493,0.498" Background="#FFDEFAFF">
         <Grid.RowDefinitions>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="23*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="337*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="datagrids" Margin="5" Grid.Row="1"/>
+        <Frame x:Name="datagrids" Margin="5,5,5,5" Grid.Row="1"/>
         <Grid Grid.Row="0" Background="#FFDEFAFF">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -22,5 +22,6 @@
             <Button Content="СУШИ МАГАЗИН" Grid.Column="1" Margin="10" FontSize="30px" Background="#FFDEFAFF" Click="Button_Click_1" BorderBrush="#FFDEFAFF" />
             <Button Content="ИНГРИДИЕНТЫ" Grid.Column="2" FontSize="25px" Margin="10" Click="Button_Click_2" Background="#FFBFFBFD"/>
         </Grid>
+
     </Grid>
 </Window>

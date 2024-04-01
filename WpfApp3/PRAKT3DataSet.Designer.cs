@@ -20,9 +20,9 @@ namespace WpfApp3 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("PRAKT2DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("PRAKT3DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class PRAKT2DataSet : global::System.Data.DataSet {
+    public partial class PRAKT3DataSet : global::System.Data.DataSet {
         
         private INGREDIENTSDataTable tableINGREDIENTS;
         
@@ -30,15 +30,15 @@ namespace WpfApp3 {
         
         private SUSHI_STOREDataTable tableSUSHI_STORE;
         
-        private global::System.Data.DataRelation relationFK__SUSHI_STO__INGRE__3C69FB99;
+        private global::System.Data.DataRelation relationFK__SUSHI_STO__INGRE__3E52440B;
         
-        private global::System.Data.DataRelation relationFK__SUSHI_STO__SUSHI__3B75D760;
+        private global::System.Data.DataRelation relationFK__SUSHI_STO__SUSHI__3D5E1FD2;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public PRAKT2DataSet() {
+        public PRAKT3DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -49,7 +49,7 @@ namespace WpfApp3 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected PRAKT2DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected PRAKT3DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -161,7 +161,7 @@ namespace WpfApp3 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            PRAKT2DataSet cln = ((PRAKT2DataSet)(base.Clone()));
+            PRAKT3DataSet cln = ((PRAKT3DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -246,16 +246,16 @@ namespace WpfApp3 {
                     this.tableSUSHI_STORE.InitVars();
                 }
             }
-            this.relationFK__SUSHI_STO__INGRE__3C69FB99 = this.Relations["FK__SUSHI_STO__INGRE__3C69FB99"];
-            this.relationFK__SUSHI_STO__SUSHI__3B75D760 = this.Relations["FK__SUSHI_STO__SUSHI__3B75D760"];
+            this.relationFK__SUSHI_STO__INGRE__3E52440B = this.Relations["FK__SUSHI_STO__INGRE__3E52440B"];
+            this.relationFK__SUSHI_STO__SUSHI__3D5E1FD2 = this.Relations["FK__SUSHI_STO__SUSHI__3D5E1FD2"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "PRAKT2DataSet";
+            this.DataSetName = "PRAKT3DataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/PRAKT2DataSet.xsd";
+            this.Namespace = "http://tempuri.org/PRAKT3DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableINGREDIENTS = new INGREDIENTSDataTable();
@@ -264,14 +264,14 @@ namespace WpfApp3 {
             base.Tables.Add(this.tableSUSHI);
             this.tableSUSHI_STORE = new SUSHI_STOREDataTable();
             base.Tables.Add(this.tableSUSHI_STORE);
-            this.relationFK__SUSHI_STO__INGRE__3C69FB99 = new global::System.Data.DataRelation("FK__SUSHI_STO__INGRE__3C69FB99", new global::System.Data.DataColumn[] {
+            this.relationFK__SUSHI_STO__INGRE__3E52440B = new global::System.Data.DataRelation("FK__SUSHI_STO__INGRE__3E52440B", new global::System.Data.DataColumn[] {
                         this.tableINGREDIENTS.ID_INGREDIENTColumn}, new global::System.Data.DataColumn[] {
                         this.tableSUSHI_STORE.INGREDIENT_IDColumn}, false);
-            this.Relations.Add(this.relationFK__SUSHI_STO__INGRE__3C69FB99);
-            this.relationFK__SUSHI_STO__SUSHI__3B75D760 = new global::System.Data.DataRelation("FK__SUSHI_STO__SUSHI__3B75D760", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__SUSHI_STO__INGRE__3E52440B);
+            this.relationFK__SUSHI_STO__SUSHI__3D5E1FD2 = new global::System.Data.DataRelation("FK__SUSHI_STO__SUSHI__3D5E1FD2", new global::System.Data.DataColumn[] {
                         this.tableSUSHI.ID_SUSHIColumn}, new global::System.Data.DataColumn[] {
                         this.tableSUSHI_STORE.SUSHI_IDColumn}, false);
-            this.Relations.Add(this.relationFK__SUSHI_STO__SUSHI__3B75D760);
+            this.Relations.Add(this.relationFK__SUSHI_STO__SUSHI__3D5E1FD2);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -303,7 +303,7 @@ namespace WpfApp3 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            PRAKT2DataSet ds = new PRAKT2DataSet();
+            PRAKT3DataSet ds = new PRAKT3DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -605,7 +605,7 @@ namespace WpfApp3 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PRAKT2DataSet ds = new PRAKT2DataSet();
+                PRAKT3DataSet ds = new PRAKT3DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -913,7 +913,7 @@ namespace WpfApp3 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PRAKT2DataSet ds = new PRAKT2DataSet();
+                PRAKT3DataSet ds = new PRAKT3DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1109,7 +1109,7 @@ namespace WpfApp3 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SUSHI_STORERow AddSUSHI_STORERow(string NAME_POVARA, int COLVO_SUSHI, SUSHIRow parentSUSHIRowByFK__SUSHI_STO__SUSHI__3B75D760, INGREDIENTSRow parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3C69FB99, string GRADE_SUSHI) {
+            public SUSHI_STORERow AddSUSHI_STORERow(string NAME_POVARA, int COLVO_SUSHI, SUSHIRow parentSUSHIRowByFK__SUSHI_STO__SUSHI__3D5E1FD2, INGREDIENTSRow parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3E52440B, string GRADE_SUSHI) {
                 SUSHI_STORERow rowSUSHI_STORERow = ((SUSHI_STORERow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1118,11 +1118,11 @@ namespace WpfApp3 {
                         null,
                         null,
                         GRADE_SUSHI};
-                if ((parentSUSHIRowByFK__SUSHI_STO__SUSHI__3B75D760 != null)) {
-                    columnValuesArray[3] = parentSUSHIRowByFK__SUSHI_STO__SUSHI__3B75D760[0];
+                if ((parentSUSHIRowByFK__SUSHI_STO__SUSHI__3D5E1FD2 != null)) {
+                    columnValuesArray[3] = parentSUSHIRowByFK__SUSHI_STO__SUSHI__3D5E1FD2[0];
                 }
-                if ((parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3C69FB99 != null)) {
-                    columnValuesArray[4] = parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3C69FB99[0];
+                if ((parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3E52440B != null)) {
+                    columnValuesArray[4] = parentINGREDIENTSRowByFK__SUSHI_STO__INGRE__3E52440B[0];
                 }
                 rowSUSHI_STORERow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSUSHI_STORERow);
@@ -1256,7 +1256,7 @@ namespace WpfApp3 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PRAKT2DataSet ds = new PRAKT2DataSet();
+                PRAKT3DataSet ds = new PRAKT3DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1394,11 +1394,11 @@ namespace WpfApp3 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SUSHI_STORERow[] GetSUSHI_STORERows() {
-                if ((this.Table.ChildRelations["FK__SUSHI_STO__INGRE__3C69FB99"] == null)) {
+                if ((this.Table.ChildRelations["FK__SUSHI_STO__INGRE__3E52440B"] == null)) {
                     return new SUSHI_STORERow[0];
                 }
                 else {
-                    return ((SUSHI_STORERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SUSHI_STO__INGRE__3C69FB99"])));
+                    return ((SUSHI_STORERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SUSHI_STO__INGRE__3E52440B"])));
                 }
             }
         }
@@ -1481,11 +1481,11 @@ namespace WpfApp3 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SUSHI_STORERow[] GetSUSHI_STORERows() {
-                if ((this.Table.ChildRelations["FK__SUSHI_STO__SUSHI__3B75D760"] == null)) {
+                if ((this.Table.ChildRelations["FK__SUSHI_STO__SUSHI__3D5E1FD2"] == null)) {
                     return new SUSHI_STORERow[0];
                 }
                 else {
-                    return ((SUSHI_STORERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SUSHI_STO__SUSHI__3B75D760"])));
+                    return ((SUSHI_STORERow[])(base.GetChildRows(this.Table.ChildRelations["FK__SUSHI_STO__SUSHI__3D5E1FD2"])));
                 }
             }
         }
@@ -1584,10 +1584,10 @@ namespace WpfApp3 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public INGREDIENTSRow INGREDIENTSRow {
                 get {
-                    return ((INGREDIENTSRow)(this.GetParentRow(this.Table.ParentRelations["FK__SUSHI_STO__INGRE__3C69FB99"])));
+                    return ((INGREDIENTSRow)(this.GetParentRow(this.Table.ParentRelations["FK__SUSHI_STO__INGRE__3E52440B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SUSHI_STO__INGRE__3C69FB99"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SUSHI_STO__INGRE__3E52440B"]);
                 }
             }
             
@@ -1595,10 +1595,10 @@ namespace WpfApp3 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SUSHIRow SUSHIRow {
                 get {
-                    return ((SUSHIRow)(this.GetParentRow(this.Table.ParentRelations["FK__SUSHI_STO__SUSHI__3B75D760"])));
+                    return ((SUSHIRow)(this.GetParentRow(this.Table.ParentRelations["FK__SUSHI_STO__SUSHI__3D5E1FD2"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__SUSHI_STO__SUSHI__3B75D760"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__SUSHI_STO__SUSHI__3D5E1FD2"]);
                 }
             }
             
@@ -1730,7 +1730,7 @@ namespace WpfApp3 {
         }
     }
 }
-namespace WpfApp3.PRAKT2DataSetTableAdapters {
+namespace WpfApp3.PRAKT3DataSetTableAdapters {
     
     
     /// <summary>
@@ -1896,25 +1896,48 @@ SELECT ID_INGREDIENT, NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT FROM IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT2ConnectionString;
+            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT3ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_INGREDIENT, NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT FROM dbo" +
                 ".INGREDIENTS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM INGREDIENTS\r\nWHERE  (ID_INGREDIENT = @Original_ID_INGREDIENT)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_INGREDIENT", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_INGREDIENT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO [dbo].[INGREDIENTS] ([NAME_INGREDIENT], [GRAMMOVKA], [DESCRIPTION_ING" +
+                "REDIENT]) VALUES (@NAME_INGREDIENT, @GRAMMOVKA, @DESCRIPTION_INGREDIENT);\r\n";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NAME_INGREDIENT", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NAME_INGREDIENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GRAMMOVKA", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, "GRAMMOVKA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPTION_INGREDIENT", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, "DESCRIPTION_INGREDIENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE [dbo].[INGREDIENTS] SET [NAME_INGREDIENT] = @NAME_INGREDIENT, [GRAMMOVKA] " +
+                "= @GRAMMOVKA, [DESCRIPTION_INGREDIENT] = @DESCRIPTION_INGREDIENT WHERE (([ID_ING" +
+                "REDIENT] = @Original_ID_INGREDIENT));";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NAME_INGREDIENT", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NAME_INGREDIENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GRAMMOVKA", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, "GRAMMOVKA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPTION_INGREDIENT", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, "DESCRIPTION_INGREDIENT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_INGREDIENT", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_INGREDIENT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PRAKT2DataSet.INGREDIENTSDataTable dataTable) {
+        public virtual int Fill(PRAKT3DataSet.INGREDIENTSDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1927,9 +1950,9 @@ SELECT ID_INGREDIENT, NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT FROM IN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PRAKT2DataSet.INGREDIENTSDataTable GetData() {
+        public virtual PRAKT3DataSet.INGREDIENTSDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PRAKT2DataSet.INGREDIENTSDataTable dataTable = new PRAKT2DataSet.INGREDIENTSDataTable();
+            PRAKT3DataSet.INGREDIENTSDataTable dataTable = new PRAKT3DataSet.INGREDIENTSDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1937,14 +1960,14 @@ SELECT ID_INGREDIENT, NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT FROM IN
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet.INGREDIENTSDataTable dataTable) {
+        public virtual int Update(PRAKT3DataSet.INGREDIENTSDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet dataSet) {
+        public virtual int Update(PRAKT3DataSet dataSet) {
             return this.Adapter.Update(dataSet, "INGREDIENTS");
         }
         
@@ -2091,6 +2114,103 @@ SELECT ID_INGREDIENT, NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT FROM IN
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string NAME_INGREDIENT, decimal GRAMMOVKA, string DESCRIPTION_INGREDIENT, int Original_ID_INGREDIENT, string Original_NAME_INGREDIENT, decimal Original_GRAMMOVKA, string Original_DESCRIPTION_INGREDIENT) {
             return this.Update(NAME_INGREDIENT, GRAMMOVKA, DESCRIPTION_INGREDIENT, Original_ID_INGREDIENT, Original_NAME_INGREDIENT, Original_GRAMMOVKA, Original_DESCRIPTION_INGREDIENT, Original_ID_INGREDIENT);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int Original_ID_INGREDIENT) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(Original_ID_INGREDIENT));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(string NAME_INGREDIENT, decimal GRAMMOVKA, string DESCRIPTION_INGREDIENT) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((NAME_INGREDIENT == null)) {
+                throw new global::System.ArgumentNullException("NAME_INGREDIENT");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NAME_INGREDIENT));
+            }
+            command.Parameters[1].Value = ((decimal)(GRAMMOVKA));
+            if ((DESCRIPTION_INGREDIENT == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(DESCRIPTION_INGREDIENT));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(string NAME_INGREDIENT, decimal GRAMMOVKA, string DESCRIPTION_INGREDIENT, int Original_ID_INGREDIENT) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((NAME_INGREDIENT == null)) {
+                throw new global::System.ArgumentNullException("NAME_INGREDIENT");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NAME_INGREDIENT));
+            }
+            command.Parameters[1].Value = ((decimal)(GRAMMOVKA));
+            if ((DESCRIPTION_INGREDIENT == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(DESCRIPTION_INGREDIENT));
+            }
+            command.Parameters[3].Value = ((int)(Original_ID_INGREDIENT));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -2258,24 +2378,47 @@ SELECT ID_SUSHI, NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI FROM SUSHI WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT2ConnectionString;
+            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT3ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_SUSHI, NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI FROM dbo.SUSHI";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM [dbo].[SUSHI] WHERE ([ID_SUSHI] = @Original_ID_SUSHI) ;";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_SUSHI", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_SUSHI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO [dbo].[SUSHI] ([NANE_SUSHI], [PRICE_SUSHI], [DESCRIPTION_SUSHI]) VALU" +
+                "ES (@NANE_SUSHI, @PRICE_SUSHI, @DESCRIPTION_SUSHI);\r\n";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NANE_SUSHI", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NANE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRICE_SUSHI", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, "PRICE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPTION_SUSHI", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, "DESCRIPTION_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE [dbo].[SUSHI] SET [NANE_SUSHI] = @NANE_SUSHI, [PRICE_SUSHI] = @PRICE_SUSHI" +
+                ", [DESCRIPTION_SUSHI] = @DESCRIPTION_SUSHI WHERE (([ID_SUSHI] = @Original_ID_SUS" +
+                "HI));";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NANE_SUSHI", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NANE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRICE_SUSHI", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, "PRICE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DESCRIPTION_SUSHI", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, "DESCRIPTION_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_SUSHI", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_SUSHI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PRAKT2DataSet.SUSHIDataTable dataTable) {
+        public virtual int Fill(PRAKT3DataSet.SUSHIDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2288,9 +2431,9 @@ SELECT ID_SUSHI, NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI FROM SUSHI WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PRAKT2DataSet.SUSHIDataTable GetData() {
+        public virtual PRAKT3DataSet.SUSHIDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PRAKT2DataSet.SUSHIDataTable dataTable = new PRAKT2DataSet.SUSHIDataTable();
+            PRAKT3DataSet.SUSHIDataTable dataTable = new PRAKT3DataSet.SUSHIDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2298,14 +2441,14 @@ SELECT ID_SUSHI, NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI FROM SUSHI WHERE (ID
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet.SUSHIDataTable dataTable) {
+        public virtual int Update(PRAKT3DataSet.SUSHIDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet dataSet) {
+        public virtual int Update(PRAKT3DataSet dataSet) {
             return this.Adapter.Update(dataSet, "SUSHI");
         }
         
@@ -2452,6 +2595,103 @@ SELECT ID_SUSHI, NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI FROM SUSHI WHERE (ID
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string NANE_SUSHI, decimal PRICE_SUSHI, string DESCRIPTION_SUSHI, int Original_ID_SUSHI, string Original_NANE_SUSHI, decimal Original_PRICE_SUSHI, string Original_DESCRIPTION_SUSHI) {
             return this.Update(NANE_SUSHI, PRICE_SUSHI, DESCRIPTION_SUSHI, Original_ID_SUSHI, Original_NANE_SUSHI, Original_PRICE_SUSHI, Original_DESCRIPTION_SUSHI, Original_ID_SUSHI);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int Original_ID_SUSHI) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(Original_ID_SUSHI));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(string NANE_SUSHI, decimal PRICE_SUSHI, string DESCRIPTION_SUSHI) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((NANE_SUSHI == null)) {
+                throw new global::System.ArgumentNullException("NANE_SUSHI");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NANE_SUSHI));
+            }
+            command.Parameters[1].Value = ((decimal)(PRICE_SUSHI));
+            if ((DESCRIPTION_SUSHI == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(DESCRIPTION_SUSHI));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(string NANE_SUSHI, decimal PRICE_SUSHI, string DESCRIPTION_SUSHI, int Original_ID_SUSHI) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((NANE_SUSHI == null)) {
+                throw new global::System.ArgumentNullException("NANE_SUSHI");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NANE_SUSHI));
+            }
+            command.Parameters[1].Value = ((decimal)(PRICE_SUSHI));
+            if ((DESCRIPTION_SUSHI == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(DESCRIPTION_SUSHI));
+            }
+            command.Parameters[3].Value = ((int)(Original_ID_SUSHI));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -2630,25 +2870,54 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT2ConnectionString;
+            this._connection.ConnectionString = global::WpfApp3.Properties.Settings.Default.PRAKT3ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_S" +
                 "USHI FROM dbo.SUSHI_STORE";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "DELETE FROM [dbo].[SUSHI_STORE] WHERE (([ID_SUSHI_STORE] = @Original_ID_SUSHI_STO" +
+                "RE));";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_SUSHI_STORE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_SUSHI_STORE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO [dbo].[SUSHI_STORE] ([NAME_POVARA], [COLVO_SUSHI], [SUSHI_ID], [INGRE" +
+                "DIENT_ID], [GRADE_SUSHI]) VALUES (@NAME_POVARA, @COLVO_SUSHI, @SUSHI_ID, @INGRED" +
+                "IENT_ID, @GRADE_SUSHI);\r\n";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NAME_POVARA", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "NAME_POVARA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COLVO_SUSHI", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "COLVO_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUSHI_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SUSHI_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@INGREDIENT_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "INGREDIENT_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GRADE_SUSHI", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, "GRADE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE [dbo].[SUSHI_STORE] SET [NAME_POVARA] = @NAME_POVARA, [COLVO_SUSHI] = @COL" +
+                "VO_SUSHI, [SUSHI_ID] = @SUSHI_ID, [INGREDIENT_ID] = @INGREDIENT_ID, [GRADE_SUSHI" +
+                "] = @GRADE_SUSHI WHERE (([ID_SUSHI_STORE] = @Original_ID_SUSHI_STORE));";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NAME_POVARA", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, "NAME_POVARA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COLVO_SUSHI", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "COLVO_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SUSHI_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SUSHI_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@INGREDIENT_ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "INGREDIENT_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GRADE_SUSHI", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, "GRADE_SUSHI", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_SUSHI_STORE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_SUSHI_STORE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PRAKT2DataSet.SUSHI_STOREDataTable dataTable) {
+        public virtual int Fill(PRAKT3DataSet.SUSHI_STOREDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2661,9 +2930,9 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PRAKT2DataSet.SUSHI_STOREDataTable GetData() {
+        public virtual PRAKT3DataSet.SUSHI_STOREDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PRAKT2DataSet.SUSHI_STOREDataTable dataTable = new PRAKT2DataSet.SUSHI_STOREDataTable();
+            PRAKT3DataSet.SUSHI_STOREDataTable dataTable = new PRAKT3DataSet.SUSHI_STOREDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2671,14 +2940,14 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet.SUSHI_STOREDataTable dataTable) {
+        public virtual int Update(PRAKT3DataSet.SUSHI_STOREDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PRAKT2DataSet dataSet) {
+        public virtual int Update(PRAKT3DataSet dataSet) {
             return this.Adapter.Update(dataSet, "SUSHI_STORE");
         }
         
@@ -2838,6 +3107,107 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         public virtual int Update(string NAME_POVARA, int COLVO_SUSHI, int SUSHI_ID, int INGREDIENT_ID, string GRADE_SUSHI, int Original_ID_SUSHI_STORE, string Original_NAME_POVARA, int Original_COLVO_SUSHI, int Original_SUSHI_ID, int Original_INGREDIENT_ID, string Original_GRADE_SUSHI) {
             return this.Update(NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_SUSHI, Original_ID_SUSHI_STORE, Original_NAME_POVARA, Original_COLVO_SUSHI, Original_SUSHI_ID, Original_INGREDIENT_ID, Original_GRADE_SUSHI, Original_ID_SUSHI_STORE);
         }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
+        public virtual int DeleteQuery(int Original_ID_SUSHI_STORE) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(Original_ID_SUSHI_STORE));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(string NAME_POVARA, int COLVO_SUSHI, int SUSHI_ID, int INGREDIENT_ID, string GRADE_SUSHI) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((NAME_POVARA == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NAME_POVARA));
+            }
+            command.Parameters[1].Value = ((int)(COLVO_SUSHI));
+            command.Parameters[2].Value = ((int)(SUSHI_ID));
+            command.Parameters[3].Value = ((int)(INGREDIENT_ID));
+            if ((GRADE_SUSHI == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(GRADE_SUSHI));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(string NAME_POVARA, int COLVO_SUSHI, int SUSHI_ID, int INGREDIENT_ID, string GRADE_SUSHI, int Original_ID_SUSHI_STORE) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            if ((NAME_POVARA == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NAME_POVARA));
+            }
+            command.Parameters[1].Value = ((int)(COLVO_SUSHI));
+            command.Parameters[2].Value = ((int)(SUSHI_ID));
+            command.Parameters[3].Value = ((int)(INGREDIENT_ID));
+            if ((GRADE_SUSHI == null)) {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[4].Value = ((string)(GRADE_SUSHI));
+            }
+            command.Parameters[5].Value = ((int)(Original_ID_SUSHI_STORE));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
     }
     
     /// <summary>
@@ -2977,7 +3347,7 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(PRAKT2DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(PRAKT3DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._iNGREDIENTSTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.INGREDIENTS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3014,7 +3384,7 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(PRAKT2DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(PRAKT3DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._iNGREDIENTSTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.INGREDIENTS.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3048,7 +3418,7 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(PRAKT2DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(PRAKT3DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._sUSHI_STORETableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.SUSHI_STORE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3106,7 +3476,7 @@ SELECT ID_SUSHI_STORE, NAME_POVARA, COLVO_SUSHI, SUSHI_ID, INGREDIENT_ID, GRADE_
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(PRAKT2DataSet dataSet) {
+        public virtual int UpdateAll(PRAKT3DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

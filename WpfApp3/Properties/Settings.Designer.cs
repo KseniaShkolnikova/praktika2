@@ -55,5 +55,16 @@ namespace WpfApp3.Properties {
                 return ((string)(this["PRAKT2ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-P4T6AUH\\SQLEXPRESS;Initial Catalog=PRAKT3;Integrated Security" +
+            "=True")]
+        public string PRAKT3ConnectionString {
+            get {
+                return ((string)(this["PRAKT3ConnectionString"]));
+            }
+        }
     }
 }

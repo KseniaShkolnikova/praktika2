@@ -55,10 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="PRAKT2DataSet.Designer.cs">
+    <Compile Include="PRAKT3DataSet.cs">
+      <DependentUpon>PRAKT3DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRAKT3DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>PRAKT2DataSet.xsd</DependentUpon>
+      <DependentUpon>PRAKT3DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="sushi.xaml.cs">
       <DependentUpon>sushi.xaml</DependentUpon>
@@ -112,16 +115,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="PRAKT2DataSet.xsc">
-      <DependentUpon>PRAKT2DataSet.xsd</DependentUpon>
+    <None Include="PRAKT3DataSet.xsc">
+      <DependentUpon>PRAKT3DataSet.xsd</DependentUpon>
     </None>
-    <None Include="PRAKT2DataSet.xsd">
+    <None Include="PRAKT3DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>PRAKT2DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>PRAKT3DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="PRAKT2DataSet.xss">
-      <DependentUpon>PRAKT2DataSet.xsd</DependentUpon>
+    <None Include="PRAKT3DataSet.xss">
+      <DependentUpon>PRAKT3DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
